@@ -14,10 +14,14 @@ from src.text_recognition import load_vietocr, extract_text_from_boxes
 
 # Load models từ config
 
-print(f"Loading model from {CORNER_MODEL_PATH} and {TEXT_MODEL_PATH})
-
+# Load models từ config
+st.write(f"📂 Loading corner model from: `{CORNER_MODEL_PATH}`")
 corner_model = load_yolo_model(CORNER_MODEL_PATH)
+
+st.write(f"📂 Loading text detection model from: `{TEXT_MODEL_PATH}`")
 text_model = load_yolo_model(TEXT_MODEL_PATH)
+
+st.write("📂 Loading OCR model (VietOCR)...")
 ocr_model = load_vietocr()
 
 st.set_page_config(page_title="ID Card OCR", layout="centered")
