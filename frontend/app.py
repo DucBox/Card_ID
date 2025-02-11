@@ -14,7 +14,7 @@ from src.text_recognition import load_vietocr, extract_text_from_boxes
 
 # Load models từ config
 
-st.write(f"Loading model from {CORNER_MODEL_PATH} and {TEXT_MODEL_PATH})
+print(f"Loading model from {CORNER_MODEL_PATH} and {TEXT_MODEL_PATH})
 
 corner_model = load_yolo_model(CORNER_MODEL_PATH)
 text_model = load_yolo_model(TEXT_MODEL_PATH)
