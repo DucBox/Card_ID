@@ -12,8 +12,8 @@ from src.text_detection import detect_text_regions
 from src.text_recognition import load_vietocr, extract_text_from_boxes
 
 # Load models trước để tránh load nhiều lần
-CORNER_MODEL_PATH = "/Users/ngoquangduc/Desktop/AI_Project/Card_ID/models/card_detect.pt"
-TEXT_MODEL_PATH = "/Users/ngoquangduc/Desktop/AI_Project/Card_ID/models/text_recog.pt"
+CORNER_MODEL_PATH = "../models/card_detect.pt"
+TEXT_MODEL_PATH = "../models/text_recog.pt"
 
 corner_model = load_yolo_model(CORNER_MODEL_PATH)
 text_model = load_yolo_model(TEXT_MODEL_PATH)
