@@ -12,6 +12,10 @@ from src.transform_card import perspective_transform
 from src.text_detection import detect_text_regions
 from src.text_recognition import load_vietocr, extract_text_from_boxes
 
+# Load models từ config
+
+st.write(f"Loading model from {CORNER_MODEL_PATH} and {TEXT_MODEL_PATH})
+
 corner_model = load_yolo_model(CORNER_MODEL_PATH)
 text_model = load_yolo_model(TEXT_MODEL_PATH)
 ocr_model = load_vietocr()
