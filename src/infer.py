@@ -10,8 +10,8 @@ from src.text_detection import detect_text_regions
 from src.text_recognition import load_vietocr, extract_text_from_boxes
 
 # Đường dẫn mô hình YOLO 
-MODEL_PATH = "/Users/ngoquangduc/Desktop/AI_Project/Card_ID/models/card_detect.pt"
-TEXT_MODEL_PATH = "/Users/ngoquangduc/Desktop/AI_Project/Card_ID/models/text_recog.pt"
+MODEL_PATH = "../models/card_detect.pt"
+TEXT_MODEL_PATH = "../models/text_recog.pt"
 
 # Đường dẫn ảnh test (Cập nhật ảnh cụ thể)
 IMAGE_PATH = "/Users/ngoquangduc/Desktop/AI_Project/Card_ID/data/raw/IMG_2215.JPG"
